@@ -5,3 +5,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --brandColor: #1CE783;
+}
+
+/* general */
+.link{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Graphik Web", Graphik, sans-serif;
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item{
+    margin: 1rem 2rem;
+}
+
+.sign-up-btn{
+    padding: 5px .6rem;
+    border-radius: 5px;
+    /* color: #fff; */
+    font-size: 14px;
+
+    &&:active{
+        background-color: #424957;
+    }
+}
