@@ -1,41 +1,88 @@
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --brandColor: #1CE783;
+:root {
+  --brandColor: #1ce783;
 }
 
 /* general */
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
 }
 
-body{
-    font-family: "Graphik Web", Graphik, sans-serif;
+body {
+  font-family: "Graphik Web", Graphik, sans-serif;
 }
 
-/* NAVBAR */
-nav{
-    display: flex;
-    justify-content: space-between;
+/* HEADER */
+header{
+    background: url("images/hero-background.jpg");
+    position: relative;
 }
 
-.nav-item{
-    margin: 1rem 2rem;
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
 }
 
-.sign-up-btn{
-    padding: 5px .6rem;
-    border-radius: 5px;
-    /* color: #fff; */
-    font-size: 14px;
+.nav-item {
+  margin: 1rem 2rem;
+}
 
-    &&:active{
-        background-color: #424957;
-    }
+.login-btn {
+  padding: 5px 0.6rem;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+
+  &&:active {
+    background-color: #424957;
+  }
+}
+
+/* hero */
+#hero {
+  padding: 60px 40px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-item{
+    margin: 1rem;
+    text-align: center;
+}
+
+.hero-item > h4{
+    font-size: 12px;
+    color: var(--brandColor);
+}
+
+.hero-item > p{
+    font-weight: bold;
+    width: 70%;
+    margin: auto;
+}
+
+.bundle-button{
+    width: 100%;
+    padding: 5px 24px;
+    background-color: var(--brandColor);
+    border-radius: 3px;
+    border: 1px;
+    font-weight: bold;
+}
+
+.hero-background{
+    position: absolute;
+    top:0;
+    z-index: -1;
 }
