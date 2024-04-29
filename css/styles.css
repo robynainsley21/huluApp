@@ -8,6 +8,7 @@
 
 :root {
   --brandColor: #1ce783;
+  --whiteText: #fff;
 }
 
 /* general */
@@ -17,6 +18,10 @@
 
 body {
   font-family: "Graphik Web", Graphik, sans-serif;
+}
+
+.white-text{
+    color: var(--whiteText);
 }
 
 /* HEADER */
@@ -38,7 +43,7 @@ nav {
 .login-btn {
   padding: 5px 0.6rem;
   border-radius: 5px;
-  color: #fff;
+  color: var(--whiteText);
   font-size: 14px;
 
   &&:active {
@@ -52,13 +57,19 @@ nav {
 }
 
 .hero-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 25rem);
   justify-content: center;
 }
 
 .hero-item{
     margin: 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.9rem;
+    align-items: center;
 }
 
 .hero-item > h4{
@@ -70,13 +81,15 @@ nav {
     font-weight: bold;
     width: 70%;
     margin: auto;
+    font-size: 24px;
+    color: var(--whiteText);
 }
 
 .bundle-button{
-    width: 100%;
-    padding: 5px 24px;
+    width: 90%;
+    padding: 12px 24px;
     background-color: var(--brandColor);
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px;
     font-weight: bold;
 }
@@ -85,4 +98,17 @@ nav {
     position: absolute;
     top:0;
     z-index: -1;
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+.hero-item > img{
+    width: 80%;
+}
+
+.hero-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
