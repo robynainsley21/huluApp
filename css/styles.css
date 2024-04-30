@@ -35,6 +35,10 @@ body {
   font-weight: bold;
 }
 
+.faded-text{
+  opacity: .6;
+}
+
 /* HEADER */
 header {
   background: url("images/hero-background.jpg");
@@ -64,7 +68,6 @@ nav {
 
 /* hero */
 #hero {
-  /* padding: 60px 40px; */
   width: 100vw;
 }
 
@@ -78,7 +81,6 @@ nav {
 }
 
 .hero-item {
-  /* margin: 1rem; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -129,7 +131,7 @@ nav {
   gap: 1rem;
 }
 
-.fa-solid {
+.top-arrow {
   color: #fff;
   border: 1px solid;
   border-radius: 50%;
@@ -252,4 +254,44 @@ nav {
   grid-column: 2;
   font-size: 12px;
   color: var(--whiteText);
+}
+
+/* trial section */
+#trial-section{
+  background-color: var(--dark-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trial-small-text{
+  font-size: 10px;
+  margin: 2rem;
+  text-align: center;
+  width: 90%;
+}
+
+.trial-description{
+  text-align: center;
+  font-size: 16px;
+  margin: 1rem 2rem;
+  width: 90%;
+}
+
+#trial-section :first-child{
+  margin: 1rem;
+}
+
+.trial-button{
+  padding: .9rem 1.5rem;
+  background-color: var(--brandColor);
+  font-weight: bold;
+  border: 1px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.view-channels-link{
+  border-bottom: 1px solid var(--whiteText);
 }
