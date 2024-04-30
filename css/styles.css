@@ -26,6 +26,15 @@ body {
   color: var(--whiteText);
 }
 
+.green-text{
+  color: var(--brandColor);
+}
+
+.small-font{
+  font-size: 12px;
+  font-weight: bold;
+}
+
 /* HEADER */
 header {
   background: url("images/hero-background.jpg");
@@ -156,10 +165,7 @@ nav {
 
 #build-plan {
   display: flex;
-  position: absolute;
   width: 100%;
-  top: 0;
-  right: 0;
   flex-direction: column;
   align-items: center;
   background-image: linear-gradient(
@@ -204,4 +210,46 @@ nav {
   border: 2px solid var(--gray-bg);
   font-weight: bold;
   transition: ease-in-out .3s;
+}
+
+/* ALL PLANS SECTION */
+#all-plans-section{
+  text-align: center;
+  background-color: var(--dark-bg);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+
+.big-title{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.plans-paragraph{
+  width: 90%;
+}
+
+.show-container{
+  display: grid;
+  grid-template-columns: repeat(2, 20rem);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--dark-bg);
+  padding: 4.5rem;
+}
+
+.show-item{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.show-container > p{
+  grid-column: 2;
+  font-size: 12px;
+  color: var(--whiteText);
 }
